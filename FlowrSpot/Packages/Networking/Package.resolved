@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire",
+      "state" : {
+        "revision" : "78424be314842833c04bc3bef5b72e85fff99204",
+        "version" : "5.6.4"
+      }
+    },
+    {
+      "identity" : "poviokit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/poviolabs/PovioKit",
+      "state" : {
+        "revision" : "f7650e366dc1b7bda1b915b05b351ae597db0c7f",
+        "version" : "2.1.0"
+      }
+    }
+  ],
+  "version" : 2
+}
