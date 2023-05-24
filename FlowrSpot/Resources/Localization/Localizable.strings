@@ -18,3 +18,13 @@
 "home_search_placeholder" = "Looking for something specific?";
 
 "sightings_count" = "%d sightings";
+
+
+/** Sightings Scene */
+"author_name" = "by %@";
+"unknown_location" = "Unknown location";
+"favorites_count" = "%d Favorites";
+"comments_count" = "%d Comments";
+"sightings_header_title" = "Sighting List";
+"sightings_header_subtitle" = "Explore between more than 8.427 sightings";
+"add_sighting_button_title" = "+ Add New Sighting";

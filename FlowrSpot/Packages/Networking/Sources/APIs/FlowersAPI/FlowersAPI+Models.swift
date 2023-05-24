@@ -19,7 +19,7 @@ public extension FlowersAPI {
     public let latinName: String
     public let genus: String?
     public let pictureUrl: String
-    public let sightingsNum: Int
+    public let sightingsNum: Int?
     public let authorId: String
 //    public let favorite: Bool
   }
