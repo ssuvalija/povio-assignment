@@ -14,7 +14,7 @@ protocol HomeDisplayLogic: AnyObject {
   func displayError(title: String, message: String)
 }
 
-final class HomeViewController: UIViewController {
+final class HomeViewController: BaseFlowrSpotViewController {
   var interactor: HomeBusinessLogic?
   var router: HomeRoutingLogic?
   private lazy var contentView = HomeContentView()

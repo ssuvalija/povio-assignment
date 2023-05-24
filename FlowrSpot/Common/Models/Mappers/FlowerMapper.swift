@@ -15,7 +15,7 @@ struct FlowerMapper: ModelMapper {
           name: response.name,
           latinName: response.latinName,
           genus: response.genus,
-          sightingsCount: response.sightingsNum,
+          sightingsCount: response.sightingsNum ?? 0,
           pictureUrl: URL(string: "\(Host.current.baseURL)\(response.pictureUrl)"),
           isFavorite: false)
   }

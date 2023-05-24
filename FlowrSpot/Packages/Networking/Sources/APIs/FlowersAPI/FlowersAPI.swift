@@ -12,7 +12,7 @@ import PovioKitPromise
 
 public protocol FlowersService {
   func fetchFlowersList() -> Promise<[FlowersAPI.FlowerDto]>
-  func fetchFlowerDetails(flowerId: Int) -> Promise<FlowersAPI.FlowerDto>
+  func fetchFlowerDetails(flowerId: String) -> Promise<FlowersAPI.FlowerDto>
 }
 
 public final class FlowersAPI {
@@ -32,7 +32,7 @@ extension FlowersAPI: FlowersService {
       .map { $0.items }
   }
   
-  public func fetchFlowerDetails(flowerId: Int) -> Promise<FlowerDto> {
+  public func fetchFlowerDetails(flowerId: String) -> Promise<FlowerDto> {
     client
       .request(method: .get, endpoint: Endpoints.details(flowerid: flowerId))
       .validate()
