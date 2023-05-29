@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import MapKit
 import Networking
 import PovioKitPromise
 
@@ -17,9 +16,9 @@ protocol SightingListBussinessLogic {
 
 final class SightingsInteractor {
   var presenter: SightingsPresentationLogic?
-  private let sightingsAPI: SightingsAPI
-  private let usersAPI: UsersAPI
-  private let flowersAPI: FlowersAPI
+  private let sightingsAPI: SightingsService
+  private let usersAPI: UsersService
+  private let flowersAPI: FlowersService
   
   init(sightingsAPI: SightingsAPI = .init(), usersAPI: UsersAPI = .init(), flowersAPI: FlowersAPI = .init()) {
     self.sightingsAPI = sightingsAPI

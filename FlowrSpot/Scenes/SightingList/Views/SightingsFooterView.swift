@@ -6,7 +6,6 @@
 //  Copyright © 2023 Povio Inc. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 protocol SightingsFooterDelegate: AnyObject {
