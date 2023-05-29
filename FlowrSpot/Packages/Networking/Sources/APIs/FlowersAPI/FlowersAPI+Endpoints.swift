@@ -11,7 +11,7 @@ import Foundation
 extension FlowersAPI {
   enum Endpoints: EndpointEncodable {
     case list
-    case details(flowerid: Int)
+    case details(flowerid: String)
     
     var path: Path {
       switch self {

@@ -15,6 +15,7 @@ public extension AlamofireNetworkClient {
     let session: Session = {
       let configuration = URLSessionConfiguration.af.default
       configuration.timeoutIntervalForRequest = 10
+      configuration.timeoutIntervalForResource = 10
       configuration.waitsForConnectivity = true
       return Session(configuration: configuration,
                      eventMonitors: [AlamofireConsoleLogger()])
